@@ -12,6 +12,10 @@ For that, using *YOLOv5* as a Machine learning model which was trained on the cu
 - *Object Detection* : The models is trained to analyze images or video footage from cameras installed along railway tracks. The models can identify and locate objects or obstacles on the tracks, such as fallen trees, rocks, debris, and even actual humans.
 
 - *Real-time Monitoring*: The project involves monitoring of the railway tracks, and when an object or obstacle is detected, it will triggers an immediate response, such as notifying railway stations, signaling the train to slow down or stop, or initiating track maintenance. The model works for images as well as videos.
+  
+- *Application*:
+![image](https://github.com/omkaarsavant/Pravaas-Derailment-Prevention-by-Track-Object-Detection/assets/122353858/382ea480-bd19-409d-b0f4-8e2046684799)
+
 
 ## How we built it
 We went with YOLOv5 which is a vision AI model as the base model on which the training was done. We also created our own *custom dataset* of train obstacles to train the model. Creating the custom dataset involved selecting images from different sources and manually labelling them. The dataset had two parts the training part and the test part, which was further divided into the actual images on which the model was trained and the labeled. 
@@ -19,6 +23,9 @@ We went with YOLOv5 which is a vision AI model as the base model on which the tr
 The model was trained in the *LinuxOne* and *Jupyter Notebook* environment. To train this model, we used a comprehensive suite of libraries, including but not limited to *OpenCV, tqdm, torch, and util*. These libraries played an indispensable role in ensuring the successful training of our custom model
 
 Upon integrating the dataset into our workflow, we started to train on our customized *YOLOv5* model, utilizing the *COCO128* dataset as a benchmark. The training was executed over *two batches* spanning *300 epochs. Notably, our model achieved a remarkable accuracy rate of **89.5%*. Our intention was to further maximize the model's potential; however, due to time constraints, we were compelled to conclude our training at this stage.
+
+- *Accuracy*:
+![image](https://github.com/omkaarsavant/Pravaas-Derailment-Prevention-by-Track-Object-Detection/assets/122353858/a10ea7d5-f64f-44c1-b969-12b1dce404f9)
 
 ## Challenges we ran into
 The biggest difficulty was selecting the best model to use for data training. There were many choices, and each one was superior in its own way, but we settled on YOLOv5 as the model. The YOLOv5 was selected because it offered excellent community support and high throughput. Since this was our team's first machine learning project, we encountered numerous problems and coding errors. 
